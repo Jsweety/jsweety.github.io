@@ -2,7 +2,7 @@ body {
 	background-color: #111;
 	margin: 0;
 }
-#title {
+.title {
 	font-size: 50px;
 	margin: 0 0 0 50%;
 	padding: 10px;
@@ -46,8 +46,44 @@ body {
 .box a:hover {
 	outline: 3px solid gray;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1350px) {
+	.box a p {
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 1120px) {
+	.box a p {
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.box a p {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 850px) {
+	.title {
+		font-size: 40px;
+	}
 	.box {
+		margin-top: 10vh;
 		flex-direction: column;
+		align-items: center;
+	}
+	.box a {
+		margin-bottom: 50px;
+	}
+	.box a p {
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 670px) {
+	.title {
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.title {
+		font-size: 25px;
 	}
 }
